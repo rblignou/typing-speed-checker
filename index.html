@@ -1,23 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check Your Speed</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="TypingSpeed.css">
-    <script type="text/javascript" src="TypingSpeed.js"></script>
+    <title>Test Your Speed</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="favicon.ico" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
-    <main>
+    
+    <!-- Toggle button -->
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <span id="toggle-text">Light Mode</span>
+            <i class="fas fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+    </div>
+
+    <!-- Typing Image -->
+    <div class="typing-image" id="typing-image">
+        <img src="./img/light.svg" alt="Loading.." id="image1">
         <div id="timing"></div>
-        <div class="start">
-            <input type="button" value="Start test" onclick="timer()">
+    </div>
+
+    <!-- Write Text Here -->
+    <div class="start" id="start">
+        <div class="text" id="text">
+            This website helps you to enhance your typing speed!
         </div>
-        <div id = "p1"></div>
-        <div id="i1"></div>
-        <div id="msg"></div>
-    </main>
+        <div class="startbtn" id="startbtn">
+            <a href="#" id="button-1"> Let's Start</a>
+        </div>
+    </div>
+    
+    <!-- Input -->
+    <div class="inputs-here" id="inputs-here">
+        <div class="content" id="content"></div>
+        <div class="input-here" id="input-here">
+            <textarea name="input-field" id="input-field" rows="8"></textarea>
+        </div>
+    </div>
+    
+    <div class="output-here" id="output-here">
+        <div class="oplabel" id="oplabel"><i class="fas fa-trophy"></i>YOUR PERFORMANCE</div>
+        <div class="your-output" id="your-output"></div>
+        <div class="performance" id="performance"></div>
+    </div>
+    
+    <!-- Script -->
+    <!-- <script>
+        function fun(){
+            const scripts = document.createElement('script');
+            scripts.setAttribute('src', './confetti.js');
+            document.body.appendChild(scripts);
+        }
+    </script> -->
+    <!-- <script src="./confetti.js"></script> -->
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
 </body>
 </html>
