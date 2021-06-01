@@ -78,7 +78,7 @@ function timer(){
     var cntnt = content[Math.floor(Math.random()*4)];
     setContent.innerHTML = cntnt;
     setInterval(displayTime, 1000);
-    setTimeout(()=>{result(cntnt)}, 15000);
+    setTimeout(()=>{result(cntnt)}, 60000);
 }
 
 function presentText(){
