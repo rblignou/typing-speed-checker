@@ -254,6 +254,10 @@ body{
     .typing-image img{
         width: 80%;
     }
+
+    #toggle-icon{
+        display: none;
+    }
  
     /* var(--font-color) */
     .text{
